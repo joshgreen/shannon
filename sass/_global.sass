@@ -1,0 +1,34 @@
+
+.slide-1
+  background: url(../images/slide-a.jpg)
+  background-position: 63% 14%
+  background-size: 100%
+  width: 100%
+  height: 650px
+  position: relative
+  @include breakpoint(medium)
+    height: 460px
+    z-index: 10
+    float: left
+    position: relative
+  &::before
+    content: ""
+    width: 100%
+    height: 100%
+    display: block
+    background: rgba(58,58,58,0.55)
+
+  .text-box
+    position: absolute
+    top: 20%
+    width: 70%
+    left: 5%
+    color: white
+    @include breakpoint(medium)
+      top: 5%
+
+section.story
+  @include col-full
+
+.story-text, .story-image
+  @include col-1-2

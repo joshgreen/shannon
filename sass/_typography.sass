@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic,700,700italic)
+
+html
+  font-size: 16px
+  font-family: 'Open Sans', sans-serif
+
+
+body
+  font-size: 16px
+  color: $grey-1
+  line-height: 1.5
+  font-family: 'Open Sans', sans-serif
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizelegibility
+  background: $bg
+  @include breakpoint(medium)
+    font-size: 13px
+
+
+h1, h2, h3, h4, h5, h6
+  clear: both
+  -webkit-font-smoothing: antialiased
+  a
+    text-decoration: none
+    border: 0
+
+h1
+  font-size: 3.813em
+  margin-bottom: 1rem
+  line-height: 1.2
+  letter-spacing: -0.00125em
+  padding-bottom: 0.4em
+  border-bottom: 4px solid #f6bb19
+  display: table
+
+h2
+  font-size: 3em
+  line-height: 1
+  margin-bottom: 1rem
+  padding-bottom: 0.4em
+  border-bottom: 4px solid #f6bb19
+  display: table
+
+h3
+  font-size: 2.125em
+  line-height: 1
+  margin-bottom: 1rem
+  padding-bottom: 0.4em
+  border-bottom: 4px solid #f6bb19
+  display: table
+
+h4
+  font-size: 1.750em
+  line-height: 1
+  margin-bottom: 0.8rem
+
+h5
+  font-size: 1.500em
+  line-height: 1
+  margin-bottom: 0.5rem
+
+h6
+  font-size: 1.125em
+  line-height: 1
+  margin-bottom: 0.7rem
+  text-transform: uppercase
+  letter-spacing: 0.1429em
+
+
+/*
+ Links
+ */
+
+//normal hover active visited focus
+
+a
+  text-decoration: none
+  border-bottom: 1px solid rgba(34,85,221,0.1)
+  &:active, &:hover
+    outline: 0
+  img
+    border-bottom: none
+// a:focus
+
+
+a:hover
+  border-bottom-color: $yellow
+
+a:link, a:visited, a:hover
+  transition: all 0.2s ease
+
+a:active
+  transition: none
+
+/* External */
+a[rel="external"]
+  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%
+  background-size: 12px
+  padding-right: 1em
+
+
+/* Tag */
+a[rel="tag"]
+  font-size: 0.75em /* 12px */
+  line-height: 1.3334 /* 16px */
+  text-transform: lowercase
+  border: 0
+
+
+
+////
+
+p
+  margin-bottom: 1.5em
+
+.intro
+  font-size: 1.375em
+  font-weight: 600
+
+.intro strong
+  font-weight: 700
+
+b, strong
+  font-weight: bold
+
+dfn, cite, em, i
+  font-style: italic
+
+blockquote
+  margin: 0 auto
+  @include group
+  width: 80%
+  h2
+    font-size: 2.125em
+    border-bottom: none
+    border-right: 4px solid #f6bb19
+    margin: 1rem 1rem 0.2rem 0
+    line-height: 1
+    padding: 0.5rem 1rem 1rem 0
+    display: inline-block
+    float: left
+    width: 20%
+    text-align: right
+  p
+    font-size: 1.375em
+    font-weight: 600
+    display: inline-block
+    float: left
+    width: 75%
+
+
+address
+  margin: 0 0 1.5em
+
+pre
+  background: #eee
+  font-family: "Courier 10 Pitch", Courier, monospace
+  font-size: 15px
+  font-size: 0.9375rem
+  line-height: 1.6
+  margin-bottom: 1.6em
+  max-width: 100%
+  overflow: auto
+  padding: 1.6em
+
+code, kbd, tt, var
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace
+  font-size: 15px
+  font-size: 0.9375rem
+
+abbr, acronym
+  border-bottom: 1px dotted #666
+  cursor: help
+
+mark, ins
+  background: #fff9c0
+  text-decoration: none
+
+small
+  font-size: 75%
+
+big
+  font-size: 125%
+
+// form
+  // font-family: 'Lato', sans-serif
+
+
+body
+  background: eggshell
